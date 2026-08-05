@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1600, initial-scale=1">
+  <title>山西财经大学期末资料索引</title>
+  <style>
+    :root {
+      --paper: #efe3cb;
+      --paper-deep: #dfcba8;
+      --ink: #27231e;
+      --muted: #756b5d;
+      --red: #a33a2c;
+      --red-dark: #76271f;
+      --line: rgba(77, 62, 42, 0.2);
+      --cream: #f8f0df;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      width: 1600px;
+      height: 720px;
+      overflow: hidden;
+    }
+
+    body {
+      color: var(--ink);
+      font-family: "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+      background:
+        linear-gradient(90deg, transparent 39px, rgba(163, 58, 44, 0.16) 40px, transparent 41px),
+        repeating-linear-gradient(0deg, rgba(70, 55, 35, 0.035) 0, rgba(70, 55, 35, 0.035) 1px, transparent 1px, transparent 8px),
+        var(--paper);
+    }
+
+    .sheet {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      padding: 72px 82px 60px;
+    }
+
+    .sheet::before {
+      content: "";
+      position: absolute;
+      inset: 24px;
+      border: 1px solid rgba(66, 50, 31, 0.32);
+      box-shadow: inset 0 0 0 7px rgba(248, 240, 223, 0.34);
+      pointer-events: none;
+    }
+
+    .topline {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      color: var(--red-dark);
+      font-family: Consolas, "Courier New", monospace;
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .topline::after {
+      content: "";
+      width: 240px;
+      height: 1px;
+      background: var(--red);
+    }
+
+    .content {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 430px;
+      gap: 72px;
+      align-items: center;
+      margin-top: 46px;
+    }
+
+    h1 {
+      max-width: 860px;
+      margin: 0;
+      font-family: "Microsoft YaHei", "Noto Serif CJK SC", serif;
+      font-size: 78px;
+      font-weight: 900;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+    }
+
+    .rule {
+      width: 110px;
+      height: 8px;
+      margin: 32px 0 25px;
+      background: var(--red);
+    }
+
+    .tagline {
+      margin: 0;
+      color: var(--red-dark);
+      font-size: 29px;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+    }
+
+    .descriptor {
+      max-width: 760px;
+      margin: 21px 0 0;
+      color: var(--muted);
+      font-size: 19px;
+      line-height: 1.7;
+      letter-spacing: 0.035em;
+    }
+
+    .catalog {
+      position: relative;
+      padding: 30px;
+      border: 2px solid var(--ink);
+      background: rgba(248, 240, 223, 0.7);
+      box-shadow: 14px 14px 0 var(--paper-deep);
+    }
+
+    .label {
+      font-family: Consolas, "Courier New", monospace;
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+    }
+
+    .count-row {
+      display: flex;
+      align-items: baseline;
+      gap: 14px;
+      height: 104px;
+      border-bottom: 3px double var(--ink);
+    }
+
+    .count {
+      font-family: Georgia, serif;
+      color: var(--red);
+      font-size: 78px;
+      font-weight: 800;
+      line-height: 1;
+    }
+
+    .unit {
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    .fields {
+      display: grid;
+      gap: 14px;
+      padding: 28px 0 31px;
+      border-bottom: 3px double var(--ink);
+      font-family: Consolas, "Courier New", monospace;
+      font-size: 19px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
+
+    .field {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .field::before {
+      content: "";
+      width: 14px;
+      height: 14px;
+      border: 2px solid var(--red);
+      background: linear-gradient(135deg, transparent 43%, var(--red) 44%, var(--red) 57%, transparent 58%);
+    }
+
+    .stamp {
+      display: grid;
+      place-items: center;
+      width: 152px;
+      height: 74px;
+      margin: 30px 0 2px auto;
+      transform: rotate(-5deg);
+      border: 4px double var(--red);
+      color: var(--red);
+      font-size: 18px;
+      font-weight: 900;
+      letter-spacing: 0.12em;
+    }
+
+    .footer {
+      position: absolute;
+      left: 82px;
+      right: 82px;
+      bottom: 54px;
+      display: flex;
+      justify-content: space-between;
+      border-top: 1px solid var(--line);
+      padding-top: 18px;
+      color: var(--muted);
+      font-family: Consolas, "Courier New", monospace;
+      font-size: 14px;
+      letter-spacing: 0.08em;
+    }
+  </style>
+</head>
+<body>
+  <main class="sheet">
+    <div class="topline">SXUFE · Public Archive Index</div>
+    <div class="content">
+      <section>
+        <h1>山西财经大学<br>期末资料索引</h1>
+        <div class="rule"></div>
+        <p class="tagline">可检索 · 有清单 · 可校验</p>
+        <p class="descriptor">按科目与资料类型整理，以机器可读清单连接每一份归档，并用完整性哈希帮助核对文件。</p>
+      </section>
+      <aside class="catalog" aria-label="资料索引摘要">
+        <div class="label">VERIFIED RECORDS</div>
+        <div class="count-row"><span class="count">121</span><span class="unit">份资料</span></div>
+        <div class="fields">
+          <div class="field">INDEX.md</div>
+          <div class="field">MANIFEST.csv</div>
+          <div class="field">SHA256</div>
+        </div>
+        <div class="stamp">21 科目<br>已编目</div>
+      </aside>
+    </div>
+    <footer class="footer">
+      <span>FINAL EXAMS · STUDY MATERIALS</span>
+      <span>PUBLIC INDEX / INTEGRITY HASHES</span>
+    </footer>
+  </main>
+</body>
+</html>
